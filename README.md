@@ -12,3 +12,7 @@ This dataset contains Reddit submissions matched to climate-misinformation keywo
 
 ## License
 Data are public Reddit posts; please respect Reddit’s Terms. Derived dataset licensed under CC BY 4.0 for the tabular arrangement.
+
+## Licensing
+- **Code**: MIT License (`LICENSE-MIT`).
+- **Dataset**: CC BY 4.0 (`LICENSE-CC-BY-4.0`). Please cite as “Bindra, T. (2025). *Reddit Climate Misinformation (2019–2025)*.”
