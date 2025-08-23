@@ -1,0 +1,7 @@
+.venv/
+.env
+__pycache__/
+*.parquet
+# keep the clean CSV, ignore the raw ones:
+reddit_climate_misinfo.csv
+reddit_climate_misinfo_posts.csv
