@@ -1,18 +1,21 @@
-# Climate Misinformation on Reddit (2019–2025)
-This dataset contains Reddit submissions matched to climate-misinformation keywords across several subreddits.
-- **Source**: Reddit API (PRAW) search with subreddit restriction
-- **Time span**: 2019-01-01 to 2025-06-30
-- **Columns**: id, created_utc, subreddit, author, score, num_comments, title, selftext, url, permalink, keyword, created_iso, title_len, selftext_len
-- **Collection script**: `collect_reddit.py`
-- **Cleaning**: `clean_reddit.py` → `reddit_climate_misinfo_clean.csv` and `.parquet`
+# Reddit Climate Misinformation (2019–2025)
 
-## Notes
-- Some subreddits may be skipped if private/forbidden/redirected.
-- `author` is a public Reddit username string.
+This project collects, cleans, and analyzes Reddit discussions containing climate misinformation keywords across multiple subreddits.  
+The dataset includes **~2,500 cleaned posts** spanning 2019–2025, with fields for subreddit, author, timestamps, scores, and keyword matches.
 
-## License
-Data are public Reddit posts; please respect Reddit’s Terms. Derived dataset licensed under CC BY 4.0 for the tabular arrangement.
+🔗 **Dataset on Kaggle:** https://www.kaggle.com/datasets/teghbindra/reddit-climate-misinfo  
+📂 **Code & Documentation:** https://github.com/Phoenix275/cjsj-climate-misinfo
 
-## Licensing
-- **Code**: MIT License (`LICENSE-MIT`).
-- **Dataset**: CC BY 4.0 (`LICENSE-CC-BY-4.0`). Please cite as “Bindra, T. (2025). *Reddit Climate Misinformation (2019–2025)*.”
+### Summary Stats
+- 2,495 cleaned rows
+- Top subreddits: r/conspiracy, r/climate, r/politics, r/climatechange
+- Most common misinformation keywords: *“global warming hoax,” “climate hoax,” “climate propaganda”*
+
+### Methods
+- **Data collection**: Reddit API (via PRAW) with keyword search across target subreddits  
+- **Cleaning**: Removed deleted/duplicate posts, normalized text, added length + timestamp fields  
+- **Ethics**: Only public Reddit data, no private info, licensed CC-BY-4.0
+
+---
+
+This project was built as part of my submission to the **Columbia Junior Science Journal (CJSJ)** original research category.
