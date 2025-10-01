@@ -3,7 +3,7 @@
 This project collects, cleans, and analyzes Reddit discussions containing climate misinformation keywords across multiple subreddits.  
 The dataset includes **~2,500 cleaned posts** spanning 2019–2025, with fields for subreddit, author, timestamps, scores, and keyword matches.
 
-🔗 **Dataset on Kaggle:** https://www.kaggle.com/datasets/teghbindra/reddit-climate-misinfo  
+🔗 **Dataset on Kaggle:** [https://www.kaggle.com/datasets/teghbindra/reddit-climate-misinfo  ](https://www.kaggle.com/datasets/teghbindra/reddit-climate-misinformation/data)
 📂 **Code & Documentation:** https://github.com/Phoenix275/cjsj-climate-misinfo
 
 ### Summary Stats
